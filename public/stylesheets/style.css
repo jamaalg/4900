@@ -6,3 +6,10 @@ ol {
 .thumbnail img {
   max-height: 150px;
 }
+
+.description {
+  color: gray;
+  font-size: 8px;
+  border: 1px solid gray;
+  padding: 5px 5px 5px 5px;
+}
