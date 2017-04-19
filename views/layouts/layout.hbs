@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
-<!-- Bootsrap -->
-    <!-- Latest compiled and minified CSS -->
+    <title> {{title}} </title>
+<!-- Bootsrap CDN-->
+<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://use.fontawesome.com/a31a97ee73.js"></script>
 
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+<!-- External Stylesheet Scripts -->
+<link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <!-- Adds the header.hbs file &
-   Specify name of the partial-->
+
+<body>
+    <!-- Adds the header.hbs file & Specify name of the partial-->
     {{> header}}
 
     <!-- Div creates a container class for Bootstrap layout in the index.hbs file-->
-  <div class="container"> 
-    {{{body}}}
-      </div>
-<!-- JQuery -->
+    <div class="container"> {{{body}}} </div>
+
+<!-- JQuery CDN Script -->
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-    <!-- bootstrap -->
-    <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<!-- Bootstrap -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

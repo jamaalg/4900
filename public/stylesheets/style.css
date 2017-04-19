@@ -13,3 +13,9 @@ ol {
   border: 1px solid gray;
   padding: 5px 5px 5px 5px;
 }
+
+.price {
+  color: purple;
+  font-style: bold;
+  font-size: 16px;
+}
