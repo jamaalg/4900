@@ -2,3 +2,7 @@ ol {
   color:green;
   font-size: 12px;
 }
+
+.thumbnail img {
+  max-height: 150px;
+}
