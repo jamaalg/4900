@@ -22,9 +22,7 @@ var products = [
 
 ];
 
-
 var done = 0;
-
 // Loop through products array and insert/save into db
 for (var i = 0; i<products.length; i++){
   products[i].save(function(err, result){
