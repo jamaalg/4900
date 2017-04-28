@@ -1,7 +1,6 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 
-
 <!-- Loop through array of products from database-->
 {{# each products}}
 <div class="row">
@@ -15,7 +14,7 @@
 
          <!-- Clearfix helper class Bootstrap Removes all floating within div float independently -->
          <div class="clearfix">
-           <div class="price pull-left">${{ this.price}}</div>
+           <div class="price pull-left">${{ this.price }}</div>
            <a href="#" class="btn btn-success pull-right" role="button">Add to <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
          </div>
        </div>
