@@ -11,11 +11,14 @@ var passport = require('passport');
 var flash = require('connect-flash');
 var routes = require('./routes/index');
 
-
 var app = express();
-mongoose.connect('localhost:27017/shopping');
 
-// view engine setup
+// Mongoose connect to database
+mongoose.connect('localhost:27017/shopping');
+// Import passport configuration file
+require('./config/passport');
+
+// Handlebars view engine setup
 app.engine('.hbs', expresshbs({defaultLayout: 'layout', extname: '.hbs'}))
 app.set('view engine', '.hbs');
 
@@ -31,10 +34,12 @@ app.use(session({secret: 'mysupersecret', resave: false, saveUninitialized: fals
 // using of connect-flash and passport
 // needs sessions to be initialized first because it uses sessions
 app.use(flash());
-// initalize passport, set it to use sessions to store the users
+
+// Initalize passport, set it to use sessions to store the users
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Make public files available for use
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
