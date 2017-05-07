@@ -8,6 +8,5 @@ var schema = new Schema({
   description: {type: String, required: true},
   price: {type: Number, required: true},
 });
-
 // Specify name of model and schema
 module.exports = mongoose.model('Product', schema);
