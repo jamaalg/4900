@@ -1,6 +1,12 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
-
+<div class="row">
+  <div class="col-sm-6 col-md-4 col-md-offset- col-sm-offset-3">
+    <div id="success" class="alert alert-success" {{#if noMessages}}hidden{{/if}}>
+        {{successMsg}}
+    </div>
+  </div>
+</div>
 <!-- Loop through array of products from database-->
 {{# each products}}
 <div class="row">
