@@ -14,14 +14,17 @@
 <body>
     <!-- Adds the header.hbs file & Specify name of the partial-->
     {{> header}}
+
+    <!-- JQuery CDN Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+      
     <!-- Div creates a container class for Bootstrap layout in the index.hbs file-->
     <div class="container"> {{{body}}} </div>
 
-<!-- JQuery CDN Script -->
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+
 
 <!-- Bootstrap -->
 <!-- Latest compiled and minified JavaScript -->
