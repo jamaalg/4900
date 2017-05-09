@@ -32,7 +32,7 @@ router.get('/add-to-cart/:id', function(req,res,next){
 });
 
 
-router.get("shoppig-cart", function(req,res,next){
+router.get("/shopping-cart", function(req,res,next){
   if(!req.session.cart){
     return res.render('shop/shopping-cart', {products: bull});
   }
