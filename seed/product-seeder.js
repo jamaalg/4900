@@ -17,7 +17,11 @@ var products = [
   }),
 
   new Product({
-  imagePath:'http://www.google.com', title: 'Samsung S7', description: 'Exploding Phone', price: 5
+  imagePath:'http://s7d2.scene7.com/is/image/SamsungUS/600_006_Galaxy_S7_bk_Left_Angle', title: 'Samsung S7', description: 'Exploding Phone', price: 5
+  })
+
+  new Product({
+  imagePath:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEZo8_U2Xo9F55yqhQqmnBtTys0Pv_x7gCVAs2tX4LJ7Jk5osL', title: 'LG V20', description: 'LG has an all new phone out this year which has a 32 bit DAC dedciated to audiphiles who love to listen to there music on the go.', price: 800
   })
 
 ];
