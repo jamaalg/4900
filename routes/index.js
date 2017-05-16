@@ -68,9 +68,7 @@ router.post('/checkout', function(req,res,next){
   stripe.charges.create({
     amount: cart.totalPrice*100,
     currency: "usd",
-    source: {
-      "id": "pk_test_PvMIl9Oy3Q1PHNDrrHeUEmuP"
-    }, // obtained with Stripe.js
+    source: req.body.stripeToken, // obtained with Stripe.js
     description: "test charge"
   }, function(err, charge) {
     // asynchronously called

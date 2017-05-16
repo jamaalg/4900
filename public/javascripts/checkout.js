@@ -6,12 +6,12 @@ $form.submit(function(event){
   $form.find('button').prop('disabled',true);
 
   Stripe.card.createToken({
-    number: $('#card-number').val(),
-    cvc: $('#card-cvc').val(),
-    exp_month:$('#card-expiry-month').val() ,
-    exp_year: $('#card-expiry-year').val(),
-    name: $('#card-name').val()
-  }, stripeResponseHandler();
+    number: $('#cardNumber').val(),
+    cvc: $('#cardCvc').val(),
+    exp_month:$('#cardMonth').val() ,
+    exp_year: $('#cardYear').val(),
+    name: $('#cardName').val()
+  }, stripeResponseHandler);
   return false;
 });
 
