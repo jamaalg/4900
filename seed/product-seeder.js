@@ -13,7 +13,7 @@ var products = [
 
   // new products with information to put into the database
   new Product({
-  imagePath:'http://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge_wm_brw/public/article_images/2017/03/galaxy-s8-s8-plus-together-7.jpg?itok=XyjOZYf3', title: 'Samsung S8', description: 'Super Phone', price: 10
+  imagePath:'http://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge_wm_brw/public/article_images/2017/03/galaxy-s8-s8-plus-together-7.jpg?itok=XyjOZYf3', title: 'Samsung S8', description: 'Samsung has done it yet, they have managed to release a phone that does not explode! This is a monumental feat; as for this phone, nothing really changed much, metal frame, glass back and non removable battery.', price: 10
   }),
 
   new Product({
@@ -21,7 +21,7 @@ var products = [
 }),
 
 new Product({
-imagePath:'https://howtobeswell.files.wordpress.com/2013/01/baume-et-mercier-capeland-10006-mood_1.jpg', title: 'Baumer Mercier', description: 'watch', price: 7500
+imagePath:'https://howtobeswell.files.wordpress.com/2013/01/baume-et-mercier-capeland-10006-mood_1.jpg', title: 'Baumer Mercier', description: 'This watch is the greatest thing I have ever seen, however, it is made of unobtainum-13. I cannot afford this so I will continut to visit this site everyday and add to cart knowing I will never be able to purchase it.', price: 7500
 }),
 
   new Product({
@@ -29,7 +29,7 @@ imagePath:'https://howtobeswell.files.wordpress.com/2013/01/baume-et-mercier-cap
 }),
 
   new Product({
-  imagePath:'http://i-cdn.phonearena.com/images/phones/63258-xlarge/Apple-iPhone-7-0.jpg', title: 'iPhone 7', description: '', price: 750
+  imagePath:'http://i-cdn.phonearena.com/images/phones/63258-xlarge/Apple-iPhone-7-0.jpg', title: 'iPhone 7', description: 'Yet another iPhone in a long line of releasing products with minimal changes, but software improvements and software restrictions out the wazoo. ', price: 750
 }),
 
   new Product({
@@ -37,7 +37,7 @@ imagePath:'https://howtobeswell.files.wordpress.com/2013/01/baume-et-mercier-cap
 }),
 
   new Product({
-  imagePath:'http://cdn.cultofmac.com/wp-content/uploads/2016/04/iPad-Pro-7-780x521.jpg', title: 'iPad Pro', description: 'The 2017 iPad Pro is packed with an awful lot of nothing', price: 1200
+  imagePath:'http://cdn.cultofmac.com/wp-content/uploads/2016/04/iPad-Pro-7-780x521.jpg', title: 'iPad Pro', description: 'The 2017 iPad Pro is packed with an awful lot of nothing, another product in the apple ecosytem that muddies the product line up even further.', price: 1200
 }),
 
   new Product({
