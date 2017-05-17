@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
       productChunks.push(docs.slice(i,i+chunkSize));
     }
     // Renders the home page view, passes Title Page, Product Array,
-    res.render('shop/index', { title: 'Store Content' , products: productChunks, successMsg: successMsg, noMessages: !successMsg });
+    res.render('shop/index', { title: 'Inventory' , products: productChunks, successMsg: successMsg, noMessages: !successMsg });
   });
 });
 
