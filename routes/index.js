@@ -60,7 +60,6 @@ router.post('/checkout', function(req,res,next){
   }
 
   var cart = new Cart(req.session.cart);
-
   var stripe = require("stripe")(
     "sk_test_DEDm7Su9rs79ijAZS49V95Po"
   );
@@ -77,7 +76,7 @@ router.post('/checkout', function(req,res,next){
       return res.redirect('/checkout');
     }
     req.flash('success', 'purchase successful');
-    req.cart = null;
+    req.session.cart = null;
     res.redirect('/');
   });
 });
