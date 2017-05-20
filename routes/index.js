@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Cart = require('../models/cart');
 var Product =require('../models/product');
+var Order = require('../models/order');
 
 router.get('/', function(req, res, next) {
   var successMsg = req.flash('success')[0];
