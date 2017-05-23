@@ -1,8 +1,11 @@
+// cart.js
+// Cart Functionality
 module.exports = function Cart(oldCart){
   this.items = oldCart.items || {};
   this.totalQty = oldCart.totalQty || 0;
   this.totalPrice = oldCart.totalPrice || 0;
 
+// Add item to cart
   this.add = function(item, id){
     var storedItem = this.items[id];
     if (!storedItem){
@@ -13,7 +16,7 @@ module.exports = function Cart(oldCart){
       this.totalQty++;
       this.totalPrice+= storedItem.item.price;
   };
-
+// Reduce quantity of an item in the cart
   this.reduceByOne = function(id) {
        this.items[id].qty--;
        this.items[id].price -= this.items[id].item.price;
@@ -24,13 +27,13 @@ module.exports = function Cart(oldCart){
            delete this.items[id];
        }
    };
-
+  // Remove an item from the cart
    this.removeItem = function(id) {
        this.totalQty -= this.items[id].qty;
        this.totalPrice -= this.items[id].price;
        delete this.items[id];
    };
-   
+  // Updates the cart
   this.generateArray = function(){
     var arr = [];
     for (var id in this.items){

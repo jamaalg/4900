@@ -4,7 +4,7 @@ var Product = require('../models/product');
 // import the use of mongoose
 var mongoose = require('mongoose');
 
-// Connect to the database
+// Connect to the database &  import bluebird
 mongoose.connect('localhost:27017/shopping');
 mongoose.Promise =require('bluebird');
 
@@ -47,7 +47,6 @@ imagePath:'https://howtobeswell.files.wordpress.com/2013/01/baume-et-mercier-cap
 new Product({
 imagePath:'http://d3ae0koducpnek.cloudfront.net/uploads/asset_image/image/5786bea7104ec807af000b62/products_primary_red-raven-brain-1-og.png?v=1468448765', title: 'Red Raven 4K Brain', description: '*** Note *** this is for the BRAIN ONLY, you will need to purchase additional add ons in order for the camera to function properly.', price: 9500
 })
-
 ];
 
 var done = 0;

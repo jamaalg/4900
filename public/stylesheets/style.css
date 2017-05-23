@@ -1,21 +1,21 @@
-ol {
+ol{
   color:green;
   font-size: 12px;
 }
 
-.thumbnail img {
+.thumbnail img{
   max-height: 150px;
   min-height: 200px;
 }
 
-.description {
+.description{
   color: gray;
   font-size: 12px;
   border: 1px solid gray;
   padding: 5px 5px 5px 5px;
 }
 
-.price {
+.price{
   color: purple;
   font-style: bold;
   font-size: 16px;

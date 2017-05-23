@@ -75,12 +75,11 @@ router.post('/checkout', isLoggedIn, function(req,res,next){
   if(!req.session.cart){
     return res.redirect('/shopping-cart');
   }
-
   var cart = new Cart(req.session.cart);
   var stripe = require("stripe")(
     "sk_test_DEDm7Su9rs79ijAZS49V95Po"
   );
-
+  // Creates a charge
   stripe.charges.create({
     amount: cart.totalPrice*100,
     currency: "usd",
@@ -92,7 +91,7 @@ router.post('/checkout', isLoggedIn, function(req,res,next){
       req.flash('error', err.message);
       return res.redirect('/checkout');
     }
-
+    // Creates and order
     var order = new Order({
       user: req.user,
       cart: cart,

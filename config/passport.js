@@ -1,3 +1,6 @@
+// passport.js
+// User authentication for user sign in and sign out
+// as well as session management
 var passport = require('passport');
 var User = require('../models/user');
 var LocalStrategy = require('passport-local').Strategy;
@@ -6,13 +9,13 @@ var LocalStrategy = require('passport-local').Strategy;
 passport.serializeUser(function(user,done){
   done(null,user.id);
 });
-
+// Take user session out
 passport.deserializeUser(function(id, done){
   User.findById(id, function(err,user){
     done(err,user);
   });
 });
-
+// User authentication for user signup
 passport.use('local.signup', new LocalStrategy({
   usernameField: 'email',
   passwordField: 'password',

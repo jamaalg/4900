@@ -1,3 +1,5 @@
+// product.js
+// Database Schema for products
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 

@@ -1,3 +1,4 @@
+// Import packages/dependencies
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -11,9 +12,7 @@ var passport = require('passport');
 var flash = require('connect-flash');
 var validator =require('express-validator');
 var MongoStore = require('connect-mongo')(session);
-
 var app = express();
-
 var routes = require('./routes/index');
 var userRoutes = require('./routes/user');
 
@@ -40,11 +39,14 @@ app.use(session({
   store: new MongoStore({mongooseConnection: mongoose.connection}),
   cookie: {maxAge: 180 * 60 * 1000}
 }));
+
 // needs sessions to be initialized first because it uses sessions
 app.use(flash());
+
 // Initalize passport, set it to use sessions to store the users
 app.use(passport.initialize());
 app.use(passport.session());
+
 // Make public files available for use
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(function(req,res,next){

@@ -1,3 +1,5 @@
+// user.js
+// Database Schema for Ousers
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt-nodejs');

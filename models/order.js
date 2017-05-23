@@ -1,7 +1,9 @@
+// order.js
+// Database Schema for Orders
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-// schema for products in database
+// schema for orders in database
 var schema = new Schema({
   user: {type: Schema.Types.ObjectId, ref: 'User'},
   cart: {type: Object, required: true},
