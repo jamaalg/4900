@@ -1,3 +1,6 @@
+// checkout.js
+// Scripts for user checkout
+
 // Key for Stripe
 Stripe.setPublishableKey('pk_test_PvMIl9Oy3Q1PHNDrrHeUEmuP');
 

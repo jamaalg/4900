@@ -1,3 +1,5 @@
+// user.js
+// routs for the user page
 var express = require('express');
 var router = express.Router();
 var csrf = require('csurf');

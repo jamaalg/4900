@@ -1,3 +1,5 @@
+// product-seeder.js
+// Puts products into database, must run prior to application startup
 // import the product.js schema
 var Product = require('../models/product');
 

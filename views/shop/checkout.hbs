@@ -1,3 +1,7 @@
+<!--
+checkout.hbs
+View rendered for checkout page
+-->
 <div class="row">
     <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
         <h1>Checkout</h1>
@@ -5,21 +9,7 @@
           <div id="charge-error" class="alert alert-danger {{#if noError }} hidden {{/if}}">
               {{errMsg}}
         </div>
-    <!--
-        <div class="">
-          <form action="/checkout" method="POST" id="checkoutForm">
-          <script
-            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="pk_test_PvMIl9Oy3Q1PHNDrrHeUEmuP"
-            data-amount="2000"
-            data-name="Demo Site"
-            data-description="2 widgets"
-            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-            data-locale="auto">
-          </script>
-          </form>
-        </div>
--->
+
         <form action="/checkout" method="post" id="checkout-form">
             <div class="row">
                 <div class="col-xs-12">
